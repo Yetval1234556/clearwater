@@ -9,10 +9,20 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Simple form validation (example)
+// Simple form validation and alert
 document.getElementById('contact-form').addEventListener('submit', function(e) {
     e.preventDefault();
-    alert('Form submitted successfully!');
-    // Here you can add actual form submission logic
-});
 
+    // Basic validation
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    if (name && email && message) {
+        alert('Thank you for contacting us, ' + name + '! We will get back to you soon.');
+        // Reset form
+        this.reset();
+    } else {
+        alert('Please fill in all fields.');
+    }
+});
