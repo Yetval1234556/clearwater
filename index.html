@@ -1,12 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Blank Index.html File</title>
-	<meta name="description" content="Ths is an Index.html file">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clearwater Foundation</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-	<h1>Welcome to our Index.html File</h1>
-	<p>This is where the content should go</p>
+    <header>
+        <nav>
+            <img src="images/logo.png" alt="Clearwater Foundation Logo" id="logo">
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#get-involved">Get Involved</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h1>Clearwater Foundation</h1>
+        <p>Providing access to clean water for communities in India</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>The Clearwater Foundation is dedicated to bringing clean and safe drinking water to underserved communities in India.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Our Projects</h2>
+        <div class="project">
+            <h3>Project Title 1</h3>
+            <p>Description of Project 1</p>
+        </div>
+        <div class="project">
+            <h3>Project Title 2</h3>
+            <p>Description of Project 2</p>
+        </div>
+        <!-- Add more projects as needed -->
+    </section>
+
+    <section id="get-involved">
+        <h2>Get Involved</h2>
+        <p>Learn how you can help us in our mission to provide clean water.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Clearwater Foundation. All rights reserved.</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
 </body>
 </html>
